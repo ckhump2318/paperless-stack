@@ -38,7 +38,7 @@ Docker Compose stack for running Paperless-ngx with optional local AI capabiliti
    - In Paperless, go to Profile → API Tokens → Generate
    - Copy the token and add it to `./paperless-ai/.env` and `./paperless-gpt/.env`
    - Update `./paperless-ai/.env` with Paperless username
-   - Restart services: `docker compose restart`
+   - Restart services: `docker compose down && docker compose up -d`
 
 **The AI components are entirely optional** and can be disabled by commenting them out. Paperless works great without AI.
 
